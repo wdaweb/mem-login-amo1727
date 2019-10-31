@@ -1,12 +1,26 @@
+<?php 
+include_once 'include/_common.php';
+if (!empty($_GET['logout'])) {
+  if ($_GET['logout'] == '1') {
+    unset($_SESSION['memberacc']);
+    // setcookie("memberacc","",time()-3600);
+    fun_alertmsg ("已登出會員中心!!","index.php");
+  } 
+}
+if (!empty($_SESSION["memberacc"])) {
+// if (!empty($_COOKIE["memberacc"])) {
+  header("location: member_center.php");
+}
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="#" type="image/x-icon">
   <title>註冊登入系統</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
   <h1>會員登入</h1>

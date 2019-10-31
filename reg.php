@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant-TW">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="#" type="image/x-icon">
   <title>會員註冊</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 <h1>會員註冊</h1>
@@ -33,8 +33,12 @@
     <td><input type="text" name="tel" id="tel"></td>
   </tr>
   <tr>
+    <td>E-mail：</td>
+    <td><input type="text" name="email" id="email"></td>
+  </tr>
+  <tr>
     <td>生日：</td>
-    <td><input type="date" name="date" id="date"></td>
+    <td><input type="date" name="birthday" id="birthday"></td>
   </tr>
   <tr>
     <td colspan="2" class="ct">
